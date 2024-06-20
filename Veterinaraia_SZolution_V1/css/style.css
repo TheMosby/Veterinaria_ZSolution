@@ -1,0 +1,210 @@
+body {
+    background: #f2f2f2;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+
+a{
+    text-decoration: none;
+    
+}
+
+.custom-link {
+    color: #d3d3d3; /* Gris claro */
+    text-decoration: underline; /* Subrayado */
+}
+
+.custom-link:hover {
+    /*background-color: yellow; /* Cambia esto al color de fondo que prefieras */
+    color: #4df5e5; /* Cambia esto al color del texto que prefieras */
+    /*text-decoration: none; /* Remueve el subrayado */
+}
+
+.logo-main-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover; /* Ajusta la imagen para cubrir el contenedor sin distorsionarla */
+}
+
+/* Barra Lateral */
+
+.menu-bar{
+
+    /* 
+    background: #f46b45;  /* fallback for old browsers
+    background: -webkit-linear-gradient(to right, #eea849, #f46b45);
+    background: linear-gradient(to right, #eea849, #f46b45);
+*/ 
+    background: -webkit-linear-gradient(to right, #e4f3f6,  #db84b0);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #e4f3f6,  #db84b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: bl;
+    min-width: 300px;
+    min-height: 100vh;
+}
+
+.menu-bar a{
+    color: #252D4A;
+    background: #c6d2eb;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #e4f3f6,  #db84b0);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #e4f3f6,  #db84b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+
+/* LOGO */
+.menu-bar .logo {
+    background: #0f0c29;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #415f8c, #3f7ede, #3f7ede, #415f8c);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #415f8c, #3f7ede, #3f7ede, #415f8c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
+
+}
+
+.menu-bar .logo h2 {
+    color: #ffffff;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-weight: 300;
+
+}
+
+/* MENU */
+.menu-bar .menu a {
+    display: block;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500px;
+    border-bottom: 1px solid rgba(255, 193, 131);
+}
+
+.menu-bar .menu a:hover {
+    background:  #e4f3f6
+}
+
+.menu-bar .menu a svg{
+    margin-right: 10px;
+}
+
+/* MAIN */
+.main {
+    padding-top: 40px;
+
+}
+
+.main .columna {
+    padding: 0 10px;
+}
+
+.main .titulo{
+    color: #262a34;
+    font-size: 25px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 20px;
+}
+
+.main .widget {
+    margin-bottom: 40px;
+}
+
+.main .nueva_entrada form input[type="text"],
+
+.main .widget.nueva_entrada form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-family: 'Open Sans', sans-serif;
+    border: none;
+    box-shadow: 0px, 2px, 2px, 0px rgba(0,0,0,.2);
+}
+
+.main .widget.nueva_entrada form textarea {
+    height: 400px;
+    min-height: 200px;
+    max-width: 100%;
+    min-width: 100%;
+}
+
+.main .nueva_entrada button {
+    background: -webkit-linear-gradient(to right, #415f8c, #3f7ede, #3f7ede, #415f8c);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #415f8c, #3f7ede, #3f7ede, #415f8c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    cursor: pointer;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 500px;
+    border: none;
+    display: inline-block;
+    padding: 10px;
+    width: 200px;
+    border-radius: 3px;
+    transition: .3s ease all;
+}
+
+.main .nueva_entrada button:hover {
+    background: -webkit-linear-gradient(to right, #db9dcd, #d553a8, #d553a8, #db9dcd);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #db9dcd, #d553a8, #d553a8, #db9dcd); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.main .nueva_entrada button svg{
+    margin-right: 10px;
+
+}
+ /* --Widget estadisticas --- */
+.main .estadisticas .contenedor{
+    box-shadow: 0px 1px 1px 0px rgba(0,0,0 .2);
+    margin-right: 20px;
+}
+
+.main .estadisticas .caja {
+    background: #fff;
+    border: 1px solid #e3e3e3;
+    margin-right: 10px;
+    padding: 40px 10px;
+    flex: 1;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+/* MEDIA QUERY */
+
+@media screen and (max-width: 320px) { }
+@media screen and (max-width: 576px) { 
+    .menu-bar {
+        min-height: auto;
+        background: #12c2e9;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to bottom, #e4f3f6,  #db84b0);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to bottom, #e4f3f6,  #db84b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ 
+    }
+
+    .menu-bar .menu a{
+        background: #12c2e9;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to bottom, #e4f3f6,  #db84b0);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to bottom, #e4f3f6,  #db84b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    
+    } 
+}
+@media screen and (max-width: 768px) { }
+@media screen and (max-width: 992px) { }
+@media screen and (max-width: 1200px){ 
+    .menu-bar {
+        min-width: auto;
+
+    }
+
+    .menu-bar .logo{
+        display: none;
+    }
+
+    .menu-bar .menu a label{
+        display: none;
+    }
+
+} 
+@media screen and (max-width: 1400px) { }

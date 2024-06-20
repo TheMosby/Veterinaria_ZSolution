@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ea">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <header class="row d-flex justify-content-around mt-5">
+            <div class="col-4">
+                <div class="container d-flex bg-white text-black">
+                    <img class="logo-main-img" src="img/main-logo.jpeg" alt="">
+                    <h1  class="align-self-center ms-2">Inicio de Sesión</h1>
+                </div>
+            </div>    
+        </header>
+        <div class="row d-flex justify-content-around">
+            <div class="col-4">
+                <div class="card bg-dark text-white">
+                    <div class="card-body">
+                        <div class="row">
+                            <form class="mt-3">
+                                <div class="form-group ">
+                                    <div class="container d-flex flex-column">
+                                        <label for="email">Correo electronico</label>
+                                        <input type="email" class="text" id="email" placeholder="example@example.com">
+                                    </div>
+                                </div>
+                                <div class="form-group ">
+                                    <div class="container d-flex flex-column mt-2">
+                                        <label for="password">Contraseña</label>
+                                        <input type="password" class="text" id="password" placeholder="password">
+                                    </div>
+                                </div>
+                                <div class="row d-flex justify-content-around mt-2">
+                                        <div class="col-4">
+                                            <a href="app.html" type="submit" class="btn btn-primary btn-block mt-4">Iniciar sesión</a>
+                                        </div>
+                                </div>
+                            </form>
+                            <div class="container d-flex justify-content-between mt-4"> 
+                                <a href="#" class="custom-link">Olvide mi contraseña</a>
+                                <a href="#" class="custom-link">Registrarme</a>      
+                            </div>
+                        </div>   
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
